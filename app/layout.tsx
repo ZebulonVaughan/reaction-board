@@ -21,7 +21,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className={`${headingFont.variable} ${bodyFont.variable}`}>
       <head>
-        <meta name="base:app_id" content="69c22f7b3c2c56b9bbd2f616" />
         <meta name="base:app_id" content="69cb449abc8b6d58d5a9744a" />
         <meta
           name="talentapp:project_verification"
