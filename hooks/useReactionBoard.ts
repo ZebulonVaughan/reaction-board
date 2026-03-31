@@ -3,8 +3,10 @@
 import { useEffect, useMemo, useState } from "react";
 import { useAccount, useReadContract, useWaitForTransactionReceipt, useWriteContract } from "wagmi";
 import { trackTransaction } from "@/utils/track";
+import { appId } from "@/lib/app-config";
 import { reactionBoardAbi, reactionBoardAddress } from "@/lib/contracts";
 import { buildReactionRecord, getFallbackAddress, toStatusText } from "@/lib/reaction-records";
+import { builderCodeDataSuffix } from "@/lib/wagmi";
 import { useLocalReactionStore } from "./useLocalReactionStore";
 
 export function useReactionBoard() {
@@ -43,7 +45,7 @@ export function useReactionBoard() {
 
     const nextRecords = [nextRecord, ...records.filter((record) => record.id !== nextRecord.id)].slice(0, 20);
     save(nextRecords);
-    trackTransaction("app-023", "reaction-board", address, txHash);
+    trackTransaction(appId, "reaction-board", address, txHash);
     setPendingReaction(null);
   }, [address, isSuccess, pendingReaction, records, save, txHash]);
 
@@ -54,7 +56,8 @@ export function useReactionBoard() {
       address: reactionBoardAddress,
       abi: reactionBoardAbi,
       functionName: "react",
-      args: [BigInt(selectedReaction)]
+      args: [BigInt(selectedReaction)],
+      dataSuffix: builderCodeDataSuffix
     });
   }
 

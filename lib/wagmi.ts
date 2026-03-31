@@ -1,6 +1,7 @@
 import { createConfig, http } from "wagmi";
 import { injected } from "@wagmi/connectors";
 import { base } from "wagmi/chains";
+import { builderCode, builderCodeDataSuffix } from "@/lib/app-config";
 
 export const wagmiConfig = createConfig({
   chains: [base],
@@ -10,5 +11,4 @@ export const wagmiConfig = createConfig({
   }
 });
 
-// TODO(builder-code): replace this placeholder with the final builder code data suffix.
-export const builderCodeSuffix = "TODO_REPLACE_WITH_BASE_BUILDER_CODE_SUFFIX";
+export { builderCode, builderCodeDataSuffix };

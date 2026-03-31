@@ -4,6 +4,7 @@ import { ConsoleHeader } from "@/components/ConsoleHeader";
 import { Providers } from "@/components/providers";
 import { SideRail } from "@/components/SideRail";
 import { TopTabs } from "@/components/TopTabs";
+import { appDescription, appId, appName, appUrl, embedImageUrl, splashImageUrl, talentVerification } from "@/lib/app-config";
 import "./globals.css";
 
 const headingFont = Space_Grotesk({
@@ -17,18 +18,39 @@ const bodyFont = IBM_Plex_Sans({
   variable: "--font-body"
 });
 
+const miniAppEmbed = JSON.stringify({
+  version: "1",
+  imageUrl: embedImageUrl,
+  button: {
+    title: "Open Reaction Board",
+    action: {
+      type: "launch_miniapp",
+      name: appName,
+      url: appUrl,
+      splashImageUrl,
+      splashBackgroundColor: "#0f172a"
+    }
+  }
+});
+
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en" className={`${headingFont.variable} ${bodyFont.variable}`}>
       <head>
-        <meta name="base:app_id" content="69cb449abc8b6d58d5a9744a" />
-        <meta
-          name="talentapp:project_verification"
-          content="57634a8540f6477c50304b6301b1c4cf2522b0ddf2a486e5a574a2ac6a981d62ca9afe591c2b44623a93a09d3df631800c36bcba13b20dbc1bdaa66e4dbbd73a"
-        />
+        <meta name="base:app_id" content={appId} />
+        <meta name="talentapp:project_verification" content={talentVerification} />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>reaction-board</title>
-        <meta name="description" content="A live reaction board for fast social response on Base." />
+        <title>{appName}</title>
+        <meta name="description" content={appDescription} />
+        <meta property="og:title" content={appName} />
+        <meta property="og:description" content={appDescription} />
+        <meta property="og:image" content={embedImageUrl} />
+        <meta property="og:url" content={appUrl} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content={appName} />
+        <meta name="twitter:description" content={appDescription} />
+        <meta name="twitter:image" content={embedImageUrl} />
+        <meta name="fc:miniapp" content={miniAppEmbed} />
       </head>
       <body>
         <Providers>
