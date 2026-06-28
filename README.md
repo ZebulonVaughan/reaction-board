@@ -45,3 +45,12 @@ Install dependencies using the package manager used by the project:
 
 ```bash
 npm install
+```
+
+If the project uses a different package manager, install dependencies with the matching command instead.
+
+For example:
+
+```bash
+pnpm install
+```
