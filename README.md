@@ -119,3 +119,13 @@ npm run dev
 ```
 
 Run the development server.
+
+```bash
+npm run build
+```
+
+Create a production build.
+
+```bash
+npm run start
+```
