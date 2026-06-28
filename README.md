@@ -101,3 +101,13 @@ If the project requires environment variables, create a local environment file:
 ```bash
 cp .env.example .env.local
 ```
+
+Then fill in the required values.
+
+If no example file is included, review the source code for configuration references before running the app.
+
+Do not commit local environment files.
+
+## Available Scripts
+
+The exact scripts may vary depending on the project setup.
