@@ -64,3 +64,11 @@ yarn install
 ## Development
 
 Start the local development server:
+
+```bash
+npm run dev
+```
+
+Then open the local URL printed in your terminal.
+
+Common local development URLs include:
