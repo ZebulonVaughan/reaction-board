@@ -72,3 +72,13 @@ npm run dev
 Then open the local URL printed in your terminal.
 
 Common local development URLs include:
+
+```text
+http://localhost:3000
+```
+
+or:
+
+```text
+http://localhost:5173
+```
