@@ -91,3 +91,13 @@ The exact URL depends on the framework and development server configuration.
 2. Select a reaction from the board.
 3. Confirm the interaction when prompted.
 4. View the submitted reaction after it has been sent.
+
+The app is intended to make reaction submission quick and easy.
+
+## Configuration
+
+If the project requires environment variables, create a local environment file:
+
+```bash
+cp .env.example .env.local
+```
