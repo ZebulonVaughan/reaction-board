@@ -148,3 +148,13 @@ app/
 components/
 public/
 ```
+
+Use the existing structure as the source of truth when making changes.
+
+Keep UI components focused and reusable where possible.
+
+Keep chain-specific logic separate from presentation code when practical.
+
+## Contributing
+
+Contributions are welcome.
