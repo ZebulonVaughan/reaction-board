@@ -129,3 +129,13 @@ Create a production build.
 ```bash
 npm run start
 ```
+
+Start the production server, if supported.
+
+```bash
+npm run lint
+```
+
+Run linting checks, if configured.
+
+## Suggested Project Structure
