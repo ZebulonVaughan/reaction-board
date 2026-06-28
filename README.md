@@ -166,3 +166,14 @@ When making changes:
 - Avoid unnecessary complexity.
 - Update documentation when behavior changes.
 - Test locally before opening a pull request.
+
+## Development Notes
+
+This project is intentionally small.
+
+That makes it a good place to improve one feature at a time.
+
+Useful future improvements may include:
+
+- Additional reaction options.
+- Improved loading and confirmation states.
