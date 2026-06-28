@@ -158,3 +158,11 @@ Keep chain-specific logic separate from presentation code when practical.
 ## Contributing
 
 Contributions are welcome.
+
+When making changes:
+
+- Keep the app focused on fast reaction submission.
+- Prefer clear, readable code.
+- Avoid unnecessary complexity.
+- Update documentation when behavior changes.
+- Test locally before opening a pull request.
