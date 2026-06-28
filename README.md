@@ -36,3 +36,12 @@ git clone https://github.com/ZebulonVaughan/reaction-board.git
 ```
 
 Move into the project directory:
+
+```bash
+cd reaction-board
+```
+
+Install dependencies using the package manager used by the project:
+
+```bash
+npm install
