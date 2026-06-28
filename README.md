@@ -139,3 +139,12 @@ npm run lint
 Run linting checks, if configured.
 
 ## Suggested Project Structure
+
+The repository may include directories such as:
+
+```text
+src/
+app/
+components/
+public/
+```
