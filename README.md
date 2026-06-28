@@ -111,3 +111,11 @@ Do not commit local environment files.
 ## Available Scripts
 
 The exact scripts may vary depending on the project setup.
+
+Common commands include:
+
+```bash
+npm run dev
+```
+
+Run the development server.
