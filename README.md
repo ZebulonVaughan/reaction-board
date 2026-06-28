@@ -82,3 +82,12 @@ or:
 ```text
 http://localhost:5173
 ```
+
+The exact URL depends on the framework and development server configuration.
+
+## Usage
+
+1. Open the app in a supported environment.
+2. Select a reaction from the board.
+3. Confirm the interaction when prompted.
+4. View the submitted reaction after it has been sent.
