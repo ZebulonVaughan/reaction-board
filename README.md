@@ -17,3 +17,12 @@ Repository: <https://github.com/ZebulonVaughan/reaction-board.git>
 - Fast reaction-based interaction flow.
 - Built for the Base ecosystem.
 - Minimal project scope with a clear purpose.
+- Suitable for experimenting with simple onchain app patterns.
+- Easy to extend with additional reactions, UI states, or integrations.
+
+## Project Goals
+
+- Keep the user experience quick and direct.
+- Make onchain reactions feel simple and approachable.
+- Provide a compact codebase that can be improved incrementally.
+- Support future additions without overcomplicating the app.
