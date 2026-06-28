@@ -26,3 +26,13 @@ Repository: <https://github.com/ZebulonVaughan/reaction-board.git>
 - Make onchain reactions feel simple and approachable.
 - Provide a compact codebase that can be improved incrementally.
 - Support future additions without overcomplicating the app.
+
+## Getting Started
+
+Clone the repository:
+
+```bash
+git clone https://github.com/ZebulonVaughan/reaction-board.git
+```
+
+Move into the project directory:
