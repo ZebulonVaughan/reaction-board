@@ -177,3 +177,12 @@ Useful future improvements may include:
 
 - Additional reaction options.
 - Improved loading and confirmation states.
+- Better error messages.
+- Clearer mobile layout behavior.
+- Expanded documentation for deployment.
+
+## License
+
+No license information is included in the original README.
+
+If you plan to reuse or distribute this project, check the repository for a license file or contact the maintainer.
