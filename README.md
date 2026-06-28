@@ -54,3 +54,13 @@ For example:
 ```bash
 pnpm install
 ```
+
+or:
+
+```bash
+yarn install
+```
+
+## Development
+
+Start the local development server:
